@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DCDCDC</color>
+    <color name="colorPrimaryDark">#A9A9A9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_index_normal">#9c9c9c</color>
+    <color name="main_index_tab_txt_color">#4a4a4a</color>
+
+    <color name="home_item_txt_color">#000000</color>
+    <color name="home_item_bg_color">#f0f0f0</color>
+</resources>

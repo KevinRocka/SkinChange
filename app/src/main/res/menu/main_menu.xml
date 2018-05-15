@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_load_default"
+        android:orderInCategory="101"
+        android:title="恢复默认"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+    <item
+        android:id="@+id/action_load_local1"
+        android:orderInCategory="101"
+        android:title="经典红色"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+    <item
+        android:id="@+id/action_load_local2"
+        android:orderInCategory="101"
+        android:title="忧郁蓝色"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+    <item
+        android:id="@+id/action_night_mode"
+        android:orderInCategory="101"
+        android:title="夜间模式"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+    <item
+        android:id="@+id/action_font_change"
+        android:orderInCategory="101"
+        android:title="字体改变"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_night">#696969</color>
+    <color name="colorPrimaryDark_night">#696969</color>
+    <color name="colorAccent_night">#FF4081</color>
+
+    <color name="main_index_normal_night">#9c9c9c</color>
+    <color name="main_index_tab_txt_color_night">#4a4a4a</color>
+
+    <color name="home_item_txt_color_night">#ffffff</color>
+    <color name="home_item_bg_color_night">#A9A9A9</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#ffffff" />
+
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEFFFF"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/main_index_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/index_resources_selector"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="Home"
+            android:textColor="@color/tab_selector_tv_color"/>
+
+        <RadioButton
+            android:id="@+id/main_index_resources"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/index_home_selector"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="Resources"
+            android:textColor="@color/tab_selector_tv_color"/>
+
+
+        <RadioButton
+            android:id="@+id/main_index_myself"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/index_myself_selector"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="Myself"
+            android:textColor="@color/tab_selector_tv_color"/>
+
+    </RadioGroup>
+
+</LinearLayout>

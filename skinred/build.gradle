@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    signingConfigs {
+        release {
+            keyAlias 'skinpackage'
+            keyPassword '123456'
+            storeFile file('doc/skinpackage.jks')
+            storePassword '123456'
+        }
+    }
+    defaultConfig {
+        applicationId "com.rocka.skinred"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def buildType = variant.buildType.name
+            def outputFile = output.outputFile
+            def date = releaseTime()
+            if (outputFile != null && buildType.contains("release") && outputFile.name.endsWith('.apk')) {
+                def fileName = "theme-red-${date}.skin"
+                outputFileName=fileName
+                //output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd")
+}

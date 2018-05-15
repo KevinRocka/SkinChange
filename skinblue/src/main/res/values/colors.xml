@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="main_index_normal">#000000</color>
+    <color name="main_index_tab_txt_color">#1E90FF</color>
+
+    <color name="home_item_txt_color">#000000</color>
+    <color name="home_item_bg_color">#87CEFA</color>
+</resources>
