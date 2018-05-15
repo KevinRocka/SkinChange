@@ -1,22 +1,11 @@
----
-layout:     post
-title:      "Android 插件化动态加载机制换肤"
-subtitle:   "Android 插件化动态加载机制换肤"
-date:       2018.5.9 16:54
-author:     "Rocka"
-categories: "Android进阶"
-tags:
-    - Android进阶
----
-
 前段时间被问到Android 动态换肤机制被问懵逼了，只是知道插件化换肤是可以不需要重新启动Activity，皮肤包和主APP应该是相互分离，皮肤包可以动态下载，皮肤包是一个普通的Android项目，只有简单的资源文件，没有类文件，其中做的最好的还是网易云音乐的换肤，当问到具体实现流程与内部实现方式时，还是一脸的懵逼。
 
 先来看看成品的效果吧：
 
-
+![image](https://github.com/KevinRocka/SkinChange/blob/master/screengif/android_skin_1.gif?raw=true)
 
 下面是具体插件化动态换肤机制要用到的知识点思维导图 : 
-
+![image](https://github.com/KevinRocka/SkinChange/blob/master/screengif/android_skin_0.png?raw=true)
 
 
 
